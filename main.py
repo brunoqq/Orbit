@@ -28,7 +28,7 @@ async def on_ready():
     print (client.user.id)
     print(f"Bot Version: {version}")
     print("=================================")
-    await client.change_presence(game=discord.Game(name="no OrbitMC"))
+    await client.change_presence(game=discord.Game(name="no extremepvp.com.br"))
 
 @client.event
 async def on_message(message):
@@ -45,9 +45,8 @@ async def on_message(message):
             title="Faça parte de nossa equipe:",
             color=0x31004a,
             description="\n"
-                        "***💨 Ajudante*** » http://bit.ly/OrbitAjudante\n"
+                        "***🎲 Trial-Mod*** » https://pastebin.com/Qbx9XkqW"
                         "\n"
-                        "***🎲 Trial-Mod*** » http://bit.ly/OrbitTrial"
         )
         embed1.set_author(
             name="",
@@ -55,7 +54,7 @@ async def on_message(message):
             url="https://twitter.com/OrbitMC_"
         )
         embed1.set_footer(
-            text="Copyright © 2018 OrbitMC",
+            text="Copyright © 2018 @brunoqq_",
             icon_url=client.user.avatar_url
         )
         embed1.set_thumbnail(
@@ -195,7 +194,7 @@ async def on_member_join(member):
 
     channel = client.get_channel('416938910455824404')
     serverchannel = member.server.default_channel
-    msg = "Olá {0}, seja muito bem vindo ao OrbitMC.\nEm nosso servidor de Discord você pode fazer novas amizades e se divertir muito.\n\nNossas Redes Sociais são:\n\nTwitter: https://www.twitter.com/OrbitMC_\nDiscord: https://discord.gg/AkpMZkq\nIP: mc-orbit.com".format(member.mention, member.server.name)
+    msg = "Olá {0}, seja muito bem vindo ao ExtremeMC.\nEm nosso servidor de Discord você pode fazer novas amizades e se divertir muito.\n\nNossas Redes Sociais são:\n\nTwitter: https://www.twitter.com/_ExtremeMC\nDiscord: https://discord.gg/AkpMZkq\nIP: extremepvp.com.br".format(member.mention, member.server.name)
     await client.send_message(channel, msg)
 
 client.run(token)
